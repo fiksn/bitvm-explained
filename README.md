@@ -25,11 +25,14 @@ Now let's say instead of a long running computation the program is just 32+10 (b
 The problem now is just that bitcoin script is quite basic.
 
 BitVM is a way to "chop up" that open-source code everyone has access to into smaller parts and put those on the bitcoin blockchain.
-Since tapscript is used you don't need to actually put this gigantic mess on-chain (only the root of that "tree").
-Now Victor can play a game with Peggy on the validity of a specific simple part of the computation. 
+Since tapscript is used you don't need to actually put this gigantic mess on-chain (only the root of that "tree"). Similar as a real computer
+that is built out of a huge number of logic gates, each part of the computation is such a boolean gate.
+
+Now Victor can play a game with Peggy on the validity of a specific simple part of the computation.
 (All parts need to be ok in order for everything to work out, but we are basically doing just random audits.)
-If Victor finds out Peggy was lying he can publish the fraud proof on-chain (this small part is simple enough so bitcoin can be the "enforcer"). Also if Peggy is not cooperative Victor can get her 1 BTC. Basically during that 2 days Victor can do multiple checks. In the end he can be convinced Peggy actually ran the code and got 42 or get 1 BTC richer. In order for Peggy to play along there is actually a monetary benefit
-attached after Victor gives up.
+If Victor finds out Peggy was lying he can publish the fraud proof on-chain (this small part is simple enough so bitcoin can be the "enforcer", afterall bitcoin knows about `OP_AND`, `OP_OR` and `OP_NOT`). Also if Peggy is not cooperative Victor can get her 1 BTC. 
+
+Basically during that 2 days Victor can do multiple checks. In the end he can be convinced Peggy actually ran the code and got 42 or get 1 BTC richer. In order for Peggy to play along there could be some direct monetary benefit attached for her too.
 
 The remarkable thing here is that bitcoin is able to be the trusted third party despite
 the fact bitcoin script is not able to actually execute the whole computation.
