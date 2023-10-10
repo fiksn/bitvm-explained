@@ -1,6 +1,7 @@
 # Simple explanation of BitVM
 
-(Bitcoin magazine tried to do a simple explanation too - [THE BIG DEAL WITH BITVM: ARBITRARY COMPUTATION NOW POSSIBLE ON BITCOIN WITHOUT A FORK](https://bitcoinmagazine.com/technical/the-big-deal-with-bitvm-arbitrary-computation-now-possible-on-bitcoin-without-a-fork))
+(Bitcoin magazine - [The Big Deal With BitVM: Arbitrary Computation Now Possible on Bitcoin Without a Fork](https://bitcoinmagazine.com/technical/the-big-deal-with-bitvm-arbitrary-computation-now-possible-on-bitcoin-without-a-fork) and
+LightningNetwork+ - [BitVM: Ushering in a New Era of Bitcoin Computations](https://lightningnetwork.plus/posts/450) did a similar intro post) 
 
 ## How to convince people
 
@@ -37,6 +38,10 @@ Basically during that X days Victor can do multiple checks (limited by the initi
 
 The remarkable thing here is that bitcoin is able to be the trusted third party for an arbitrary turing complete computation despite
 the fact bitcoin script is not able to actually execute it.
+
+## Caveats
+
+The BitVM protocol requires a lot of (off-chain) interactivity ("chatter") between Peggy and Victor. People think it is highly likey Peggy executed the code because there is always the possibility some honest Victor comes along and "exposes" Peggy in a verifiable way on-chain to collect the reward. However this is not a proof. Also the fact some Victor is doing a verification does not help, because Peggy could collude with him. In the end Victor is convinced beyond doubt but he still isn't able to prove Peggy was honest to everyone else.
 
 ## More
 
