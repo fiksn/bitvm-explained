@@ -45,6 +45,10 @@ The BitVM protocol requires a lot of (off-chain) interactivity ("chatter") betwe
 
 People say this will enable the construction of Ethereum like smart-contracts on Bitcoin. But I believe this is quite cumbersome and likely not even the primary design goal. BitVM it is more like [TrueBit](https://truebit.io/) protocol for arbitrary computation. Because also on Ethereum despite the fact the language is Turing complete not all computation is possible (beside not being affordable due to high gas price). That is because every node on the network has to redo all the computation in order to check so you can't have something that takes 30 min for instance (unless miners are cheating and just trusting the stuff blindly).
 
+## Lightning comparison
+
+I just realized the stuff is a quite similar to lightning. When a new Victor comes along he basically opens a dual funded channel with Peggy (both contribute 1 BTC). And they agree upfront that after X days Peggy will part with 1.1 BTC and Victor with 0.9 BTC. Then if during that time Victor is able to prove Peggy was cheating he "force-closes" the channel and ends up with 2 BTC.
+
 ## More
 
 Read more in the [BitVM whitepaper](https://bitvm.org/bitvm.pdf) or the [tapleaf circuits implementation](https://github.com/supertestnet/tapleaf-circuits/).
