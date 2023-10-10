@@ -47,7 +47,7 @@ People say this will enable the construction of Ethereum like smart-contracts on
 
 ## Lightning comparison
 
-I just realized the stuff is a quite similar to lightning. When a new Victor comes along he basically opens a dual funded channel with Peggy (both contribute 1 BTC). And they agree upfront that after X days Peggy will part with 1.1 BTC and Victor with 0.9 BTC. Then if during that time Victor is able to prove Peggy was cheating he "force-closes" the channel and ends up with 2 BTC.
+I just realized the stuff is a quite similar to lightning. When a new Victor comes along he basically opens a dual funded channel with Peggy (both contribute 1 BTC). They do a lot of computation up-front and then that after X days Peggy will part with 1.1 BTC and Victor with 0.9 BTC. Then if during that time Victor is able to prove Peggy was cheating he "force-closes" the channel and ends up with 2 BTC. But in a similar way Peggy can also flag an "impossible question" from Victor and get 2 BTC. Obviously this requires the monetary incentives to align perfectly or nobody will be willing to open "new channels".
 
 ## More
 
