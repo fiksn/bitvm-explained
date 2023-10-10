@@ -43,6 +43,8 @@ the fact bitcoin script is not able to actually execute it.
 
 The BitVM protocol requires a lot of (off-chain) interactivity ("chatter") between Peggy and Victor. People think it is highly likely Peggy executed the code because there is always the possibility some honest Victor comes along and "exposes" Peggy in a verifiable way on-chain to collect the reward. However this is not a proof. Also the fact some Victor is doing a verification does not help, because Peggy could collude with him. In the end Victor is convinced beyond doubt but he still isn't able to prove Peggy was honest to everyone else.
 
+People say this will enable the construction of Ethereum like smart-contracts on Bitcoin. But I believe this is quite cumbersome and likely not even the primary design goal. BitVM it is more like [TrueBit](https://truebit.io/) protocol for arbitrary computation. Because also on Ethereum despite the fact the language is Turing complete not all computation is possible (beside not being affordable due to high gas price). That is because every node on the network has to redo all the computation in order to check so you can't have something that takes 30 min for instance (unless miners are cheating and just trusting the stuff blindly).
+
 ## More
 
 Read more in the [BitVM whitepaper](https://bitvm.org/bitvm.pdf) or the [tapleaf circuits implementation](https://github.com/supertestnet/tapleaf-circuits/).
